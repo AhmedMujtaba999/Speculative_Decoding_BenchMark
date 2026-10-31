@@ -28,7 +28,7 @@ questions with numbers:
 
 ## How it works
 
-<p align="center"><img src="docs/how-it-works.png" alt="Plain decoding needs one target pass per token. Speculative decoding drafts gamma tokens, verifies them in one target pass, keeps them up to the first mismatch and adds the target's own token." width="100%"></p>
+<p align="center"><img src="how-it-works.png" alt="Plain decoding needs one target pass per token. Speculative decoding drafts gamma tokens, verifies them in one target pass, keeps them up to the first mismatch and adds the target's own token." width="100%"></p>
 
 Decode is **memory-bandwidth-bound**: every forward pass streams all model weights from GPU memory,
 so scoring 5 tokens costs about the same as scoring 1. Speculative decoding exploits that. A cheap
