@@ -1,0 +1,6 @@
+# GPU benchmark (Linux + NVIDIA GPU).
+# n-gram mode works on vllm>=0.10. Draft-model mode ("method": "draft_model") needs a
+# 2026 vLLM release with V1 draft-model support - upgrade with `pip install -U vllm`.
+# Suffix mode additionally needs: pip install arctic-inference
+vllm>=0.10
+-r requirements-dev.txt
