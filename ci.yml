@@ -1,0 +1,25 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cpu-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Unit tests (theory, metrics, prompts, bench CLI, report)
+        run: pytest -q
+      - name: Theory table smoke test
+        run: python -m specdec.theory --alpha 0.8 --c 0.15
+      - name: Benchmark plan (dry run, no GPU)
+        run: python bench.py --mode all --dry-run
