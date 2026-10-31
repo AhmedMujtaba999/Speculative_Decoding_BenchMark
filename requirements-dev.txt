@@ -1,0 +1,3 @@
+# CPU-only: theory, metrics, report, tests (what CI runs). No GPU needed.
+matplotlib>=3.8
+pytest>=8
