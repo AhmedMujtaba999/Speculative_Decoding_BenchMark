@@ -21,10 +21,10 @@ questions with numbers:
 ## Demo
 
 <p align="center">
-  <img src="docs/demo-race.gif" alt="Animation: plain decoding needs 13 target passes for 13 tokens, n-gram speculative decoding needs 4 passes for the same 13 tokens" width="88%">
+  <img src="demo-race.gif" alt="Animation: plain decoding needs 13 target passes for 13 tokens, n-gram speculative decoding needs 4 passes for the same 13 tokens" width="88%">
 </p>
 
-<p align="center"><sub>Illustration of the mechanism (not a measurement). Full 52-second walkthrough with the config knobs, a real CPU test run and the theory: <a href="docs/demo.mp4"><b>demo.mp4</b></a></sub></p>
+<p align="center"><sub>Illustration of the mechanism (not a measurement). Full 52-second walkthrough with the config knobs, a real CPU test run and the theory: <a href="demo.mp4"><b>demo.mp4</b></a></sub></p>
 
 ## How it works
 
