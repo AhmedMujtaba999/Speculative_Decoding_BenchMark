@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/AhmedMujtaba999/badge.svg" alt="CI"></a>
+
   <img src="https://img.shields.io/badge/python-3.10%2B-3776AB" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/vLLM-V1%20engine-0b0b0b" alt="vLLM V1 engine">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2a78d6" alt="MIT license"></a>
- <img src="https://colab.research.google.com/colab-badge.svg" alt="Open in Colab"></a>
+
 </p>
 
 A reproducible benchmark of **speculative decoding in vLLM**. It runs the same prompts through a
