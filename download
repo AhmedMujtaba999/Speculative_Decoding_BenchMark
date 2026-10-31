@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+# benchmark output (commit charts via `make report` -> docs/assets instead)
+results/
